@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "TabMovementMemory",
+    "version": "1.0",
+  
+    "description": "Keep track of when you hit tab and enter to automatically jump to your last tab.",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+
+    "permissions" : ["storage"],
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.mozilla.org/*"],
+        "js": ["tmm.js"]
+      }     
+    ]
+  }
+  
